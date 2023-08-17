@@ -3,6 +3,7 @@ import com.o2sol.pdf4java.PDFPage;
 import com.o2sol.pdf4java.content.PDFContentExtractor;
 import com.o2sol.pdf4java.content.text.*;
 import com.o2sol.pdf4java.core.exceptions.PDFException;
+import com.o2sol.pdf4java.core.cmaps.PDFSystemCmapFactory;
 import com.o2sol.pdf4java.graphics.PDFPath;
 import com.o2sol.pdf4java.graphics.PDFPen;
 import com.o2sol.pdf4java.graphics.colors.*;
@@ -11,7 +12,7 @@ public class SearchText {
     public static void main(String[] args) {
         try {
             PDFFixedDocument document = new PDFFixedDocument("..\\..\\SupportFiles\\content.pdf");
-            PDFContentExtractor ce = new PDFContentExtractor(document.getPage(0));
+            PDFContentExtractor ce = new PDFContentExtractor(document.getPage(0), new PDFSystemCmapFactory());
 
             // Simple search.
             PDFTextSearchResultCollection searchResults = ce.searchText("at");
