@@ -655,8 +655,8 @@ public class VectorGraphics {
         pageCanvas.drawRectangle(separationPen, separationBrush, 20, 605, 250, 100);
 
         pageCanvas.drawString("Pantone", sectionFont, brush, 340, 590);
-        PDFPen pantonePen = new PDFPen(PDFPantoneColor.REFLEX_BLE(), 4);
-        PDFBrush pantoneBrush = new PDFBrush(PDFPantoneColor.RHODAMINE_RED());
+        PDFPen pantonePen = new PDFPen(PDFPantoneColor.REFLEX_BLUE, 4);
+        PDFBrush pantoneBrush = new PDFBrush(PDFPantoneColor.RHODAMINE_RED);
         pageCanvas.drawRectangle(pantonePen, pantoneBrush, 340, 605, 250, 100);
 
         pageCanvas.compressAndClose();
