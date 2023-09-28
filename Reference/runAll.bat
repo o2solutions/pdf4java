@@ -20,11 +20,19 @@ CD BatesNumbers
 CALL run.bat
 CD ..
               
+CD CertifyingSignature
+CALL run.bat
+CD ..
+              
 CD ContentExtraction
 CALL run.bat
 CD ..
 
 CD ContentStream
+CALL run.bat
+CD ..
+             
+CD DecodeSignature
 CALL run.bat
 CD ..
              
@@ -45,6 +53,10 @@ CALL run.bat
 CD ..
         
 CD DocumentSplit
+CALL run.bat
+CD ..
+        
+CD DocumentTimeStamp
 CALL run.bat
 CD ..
              
@@ -119,6 +131,10 @@ CD ..
 CD Outlines
 CALL run.bat
 CD ..
+ 
+CD PAdESSignature
+CALL run.bat
+CD ..
 
 CD PageImposition
 CALL run.bat
@@ -152,11 +168,23 @@ CD ResourceOptimization
 CALL run.bat
 CD ..
       
+CD SaveSignedCopy
+CALL run.bat
+CD ..
+      
 CD SearchText
+CALL run.bat
+CD ..
+      
+CD ShowSignatureCertificate
 CALL run.bat
 CD ..
                 
 CD SimpleMerge
+CALL run.bat
+CD ..
+                
+CD SimpleSignature
 CALL run.bat
 CD ..
                
