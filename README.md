@@ -76,7 +76,7 @@ The main features of [**PDF4Java**](https://o2sol.com/pdf4java/overview.htm) lib
   - Content redaction	
   - Disable text copy/paste	
  
-##### DIGITAL SIGNATURES (these features are under development and they are not available yet)	 
+##### DIGITAL SIGNATURES  
  
   - Approval and certifying digital signatures with X509 certificates	
   - Basic CMS and PAdES digital signatures with SHA256 / SHA384 / SHA512	
@@ -85,7 +85,6 @@ The main features of [**PDF4Java**](https://o2sol.com/pdf4java/overview.htm) lib
   - Document security store	
   - Document timestamps	
   - LTV (Long Term Validation) enabled digital signatures	
-  - Support for hardware signature tokens/smartcards (Windows, WPF, Mac)	
   - Externally computed signatures	
   - Load digital signatures from signed PDF files
   - Decode existing signatures into basic ASN.1 blocks
