@@ -7,7 +7,7 @@ import com.o2sol.pdf4java.graphics.colors.PDFRgbColor;
 import com.o2sol.pdf4java.graphics.fonts.truetype.PDFAnsiTrueTypeFont;
 import com.o2sol.pdf4java.graphics.formattedcontent.*;
 
-public class HeadersAndFooters implements IPDFFlowDocumentCompletePageListener {
+public class HeadersAndFooters implements PDFFlowDocumentCompletePageListener {
     
     private int currentPage;
     

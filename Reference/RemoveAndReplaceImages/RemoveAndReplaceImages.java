@@ -1,15 +1,14 @@
 import com.o2sol.pdf4java.PDFFixedDocument;
-import com.o2sol.pdf4java.PDFPage;
 import com.o2sol.pdf4java.core.exceptions.PDFException;
 import com.o2sol.pdf4java.core.io.MemoryStream;
 import com.o2sol.pdf4java.graphics.colors.PDFGrayColorSpace;
 import com.o2sol.pdf4java.graphics.images.PDFRawImage;
-import com.o2sol.pdf4java.transforms.IPDFReplaceImageListener;
+import com.o2sol.pdf4java.transforms.PDFReplaceImageListener;
 import com.o2sol.pdf4java.transforms.PDFPageTransformer;
 import com.o2sol.pdf4java.transforms.PDFReplaceImageEvent;
 import com.o2sol.pdf4java.transforms.PDFReplaceImageTransform;
 
-public class RemoveAndReplaceImages implements IPDFReplaceImageListener {
+public class RemoveAndReplaceImages implements PDFReplaceImageListener {
     public static void main(String[] args) {
         try {
             // Load the input file.
