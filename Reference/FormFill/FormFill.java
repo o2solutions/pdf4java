@@ -11,13 +11,13 @@ public class FormFill {
             ((PDFTextBoxField)form.getField("firstname")).setText("John");
             form.getField("lastname").setValue("Doe");
 
-            ((PDFRadioButtonWidget)form.getField("sex").getWidget(0)).setChecked(true);
+            ((PDFRadioButtonWidget)form.getField("sex").getWidget(0)).setIsChecked(true);
 
             ((PDFComboBoxField)form.getField("firstcar")).setSelectedIndex(0);
 
             ((PDFListBoxField)form.getField("secondcar")).setSelectedIndex(1);
 
-            ((PDFCheckBoxField)form.getField("agree")).setChecked(true);
+            ((PDFCheckBoxField)form.getField("agree")).setIsChecked(true);
             form.flattenFields();
 
             document.save("FormFill.pdf");
