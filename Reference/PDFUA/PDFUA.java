@@ -15,7 +15,6 @@ import com.o2sol.pdf4java.graphics.fonts.truetype.PDFAnsiTrueTypeFont;
 import com.o2sol.pdf4java.graphics.formattedcontent.*;
 import com.o2sol.pdf4java.graphics.images.PDFPngImage;
 import com.o2sol.pdf4java.logicalstructure.*;
-import com.o2sol.pdf4java.standards.PDFAFormat;
 import com.o2sol.pdf4java.standards.PDFUAFormat;
 import com.o2sol.pdf4java.standards.PDFUAFormatter;
 
@@ -131,7 +130,7 @@ public class PDFUA {
         PDFStringAppearanceOptions sao = new PDFStringAppearanceOptions();
         sao.setBrush(blackBrush);
         sao.setFont(textFont);
-        sao.getFont().setUnderline(true);
+        sao.getFont().setIsUnderline(true);
         PDFStringLayoutOptions slo = new PDFStringLayoutOptions();
         slo.setX(30);
         slo.setY(260);
@@ -145,7 +144,7 @@ public class PDFUA {
         seSection.appendChild(seSpecialParagraph);
 
         pageCanvas.beginStructureElement(seSpecialParagraph);
-        textFont.setUnderline(false);
+        textFont.setIsUnderline(false);
         textFont.setSize(18);
         pageCanvas.drawString("A special paragraph with custom structure element type.", textFont, blackBrush, 30, 350);
         pageCanvas.endStructureElement();
