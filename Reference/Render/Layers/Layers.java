@@ -21,7 +21,7 @@ public class Layers {
             PDFRendererSettings settings = new PDFRendererSettings(96, 96);
             settings.setRenderingSurface(pageRenderer.createRenderingSurface(PDFRenderingSurfaceType.ARGB_INT_BLOCK, settings.getDpiX(), settings.getDpiY()));
 
-            FileStream imageStream = new FileStream("Layers.AllContent.tiff", FileMode.OPEN_READ_WRITE);
+            FileStream imageStream = new FileStream("Layers.AllContent.tif", FileMode.OPEN_READ_WRITE);
             // By default all page content is rendered, layers visibility is ignored.
             pageRenderer.convertPageToImage(imageStream, PDFPageImageFormat.TIFF, settings);
             imageStream.flush();
@@ -29,14 +29,14 @@ public class Layers {
 
             // Render only the layers that are displayed when the document is viewed.
             settings.setLayerRenderTarget(PDFLayerRenderTarget.VIEW);
-            imageStream = new FileStream("Layers.View.tiff", FileMode.OPEN_READ_WRITE);
+            imageStream = new FileStream("Layers.View.tif", FileMode.OPEN_READ_WRITE);
             pageRenderer.convertPageToImage(imageStream, PDFPageImageFormat.TIFF, settings);
             imageStream.flush();
             imageStream.close();
 
             // Render only the layers that are displayed when the document is printed.
             settings.setLayerRenderTarget(PDFLayerRenderTarget.PRINT);
-            imageStream = new FileStream("Layers.Print.tiff");
+            imageStream = new FileStream("Layers.Print.tif");
             pageRenderer.convertPageToImage(imageStream, PDFPageImageFormat.TIFF, settings);
             imageStream.flush();
             imageStream.close();
