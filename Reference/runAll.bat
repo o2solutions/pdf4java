@@ -163,6 +163,46 @@ CD ..
 CD RemoveAndReplaceImages
 CALL run.bat
 CD ..
+                 
+CD Render\HighDpiPDF2Image
+CALL run.bat
+CD ..\..
+                 
+CD Render\Layers
+CALL run.bat
+CD ..\..
+                 
+CD Render\PDF2BlackAndWhiteImage
+CALL run.bat
+CD ..\..
+                 
+CD Render\PDF2ColorImage
+CALL run.bat
+CD ..\..
+                 
+CD Render\PDF2GrayImage
+CALL run.bat
+CD ..\..
+                 
+CD Render\PDF2MultipageBlackAndWhiteTiff
+CALL run.bat
+CD ..\..
+                 
+CD Render\PDF2MultipageColorTiff
+CALL run.bat
+CD ..\..
+                 
+CD Render\PDF2MultipageGrayTiff
+CALL run.bat
+CD ..\..
+                 
+CD Render\PDF2TransparentImage
+CALL run.bat
+CD ..\..
+                 
+CD Render\SelectiveContentRendering
+CALL run.bat
+CD ..\..
 
 CD ResourceOptimization
 CALL run.bat
