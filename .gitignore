@@ -9,6 +9,7 @@
 
 # Output TIFF files
 *.tif
+*.tiff
 
 # Log file
 *.log
