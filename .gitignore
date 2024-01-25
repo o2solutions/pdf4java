@@ -4,6 +4,12 @@
 # Output PDF files
 *.pdf
 
+# Output PNG files
+*.png
+
+# Output TIFF files
+*.tif
+
 # Log file
 *.log
 
@@ -32,4 +38,6 @@ pom.xml
 /target/
 /out/
 !/SupportFiles/*.pdf
+!/SupportFiles/*.png
+!/SupportFiles/*.tif
 
