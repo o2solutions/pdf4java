@@ -14,7 +14,7 @@ public class Barcodes {
         try {
             PDFFixedDocument document = new PDFFixedDocument();
 
-            PDFStandardFont titleFont = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 16);
+            PDFStandardFont titleFont = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 16);
             PDFStandardFont barcodeFont = new PDFStandardFont(PDFStandardFontFace.HELVETICA, 12);
 
             PDFPage page = document.addPage();

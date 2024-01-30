@@ -41,7 +41,7 @@ public class FormattedContent {
 
             PDFStandardFont textFont = new PDFStandardFont(PDFStandardFontFace.HELVETICA, 10);
             PDFFormattedTextBlock pdf4netLinkBlock = new PDFFormattedTextBlock(pdf4netText);
-            pdf4netLinkBlock.setFont(new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 10));
+            pdf4netLinkBlock.setFont(new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 10));
             pdf4netLinkBlock.getFont().setIsUnderline(true);
             pdf4netLinkBlock.setTextColor(new PDFBrush(PDFRgbColor.BLUE));
             pdf4netLinkBlock.setAction(new PDFUriAction("http://www.o2sol.com/"));

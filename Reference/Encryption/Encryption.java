@@ -32,7 +32,7 @@ public class Encryption {
         // Create a new page in the document
         PDFPage page = document.getPages().add();
 
-        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLDITALIC, 16);
+        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD_ITALIC, 16);
         PDFBrush blackBrush = new PDFBrush();
         page.getCanvas().drawString("Encryption: AES 128 bit", helvetica, blackBrush, 50, 100);
 
@@ -58,7 +58,7 @@ public class Encryption {
         // Create a new page in the document
         PDFPage page = document.getPages().add();
 
-        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLDITALIC, 16);
+        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD_ITALIC, 16);
         PDFBrush blackBrush = new PDFBrush();
         page.getCanvas().drawString("Encryption: AES 256 bit", helvetica, blackBrush, 50, 100);
 
@@ -84,7 +84,7 @@ public class Encryption {
         // Create a new page in the document
         PDFPage page = document.getPages().add();
 
-        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLDITALIC, 16);
+        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD_ITALIC, 16);
         PDFBrush blackBrush = new PDFBrush();
         page.getCanvas().drawString("Encryption: AES 256 bit enhanced", helvetica, blackBrush, 50, 100);
 
@@ -110,7 +110,7 @@ public class Encryption {
         // Create a new page in the document
         PDFPage page = document.getPages().add();
 
-        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLDITALIC, 16);
+        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD_ITALIC, 16);
         PDFBrush blackBrush = new PDFBrush();
         page.getCanvas().drawString("Encryption: RC4 40 bit", helvetica, blackBrush, 50, 100);
 
@@ -136,7 +136,7 @@ public class Encryption {
         // Create a new page in the document
         PDFPage page = document.getPages().add();
 
-        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLDITALIC, 16);
+        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD_ITALIC, 16);
         PDFBrush blackBrush = new PDFBrush();
         page.getCanvas().drawString("Encryption: RC4 128 bit", helvetica, blackBrush, 50, 100);
 
@@ -166,7 +166,7 @@ public class Encryption {
         PDFFixedDocument document = new PDFFixedDocument("..\\..\\SupportFiles\\encrypted.pdf", "pdf4java");
 
         PDFPage page = document.getPage(0);
-        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 16);
+        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 16);
         PDFBrush blackBrush = new PDFBrush();
         page.getCanvas().drawString("Decrypted document", helvetica, blackBrush, 5, 5);
 

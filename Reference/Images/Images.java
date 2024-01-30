@@ -15,7 +15,7 @@ public class Images {
     public static void main(String[] args) {
         try {
             PDFFixedDocument document = new PDFFixedDocument();
-            PDFStandardFont helveticaBoldTitle = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 16);
+            PDFStandardFont helveticaBoldTitle = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 16);
             PDFStandardFont helveticaSection = new PDFStandardFont(PDFStandardFontFace.HELVETICA, 10);
 
             PDFPage page = document.addPage();

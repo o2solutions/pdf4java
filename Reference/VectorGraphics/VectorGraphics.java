@@ -22,7 +22,7 @@ public class VectorGraphics {
     public static void main(String[] args) throws IOException {
         try {
             PDFFixedDocument document = new PDFFixedDocument();
-            PDFStandardFont helveticaBoldTitle = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 16);
+            PDFStandardFont helveticaBoldTitle = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 16);
             PDFStandardFont helveticaSection = new PDFStandardFont(PDFStandardFontFace.HELVETICA, 10);
 
             RandomAccessFile iccFile = new RandomAccessFile("..\\..\\SupportFiles\\rgb.icc", "rwd");

@@ -36,7 +36,7 @@ public class Watermarks {
 
     private static void drawWatermarkUnderPageContent(PDFPage page) {
         PDFBrush redBrush = new PDFBrush(new PDFRgbColor(192, 0, 0));
-        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 36);
+        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 36);
 
         // Set the page canvas to be located under existing page content.
         page.setCanvasPosition(PDFPageCanvasPosition.UNDER_EXISTING_PAGE_CONTENT);
@@ -53,7 +53,7 @@ public class Watermarks {
 
     private static void drawWatermarkOverPageContent(PDFPage page) {
         PDFBrush redBrush = new PDFBrush(new PDFRgbColor(192, 0, 0));
-        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 32);
+        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 32);
         PDFPageCanvas pageCanvas = page.getCanvas();
 
         // The page canvas is located by default on top of existing page content.
@@ -85,7 +85,7 @@ public class Watermarks {
 
     private static void drawWatermarkWithTransparency(PDFPage page) {
         PDFBrush redBrush = new PDFBrush(new PDFRgbColor(192, 0, 0));
-        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 36);
+        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 36);
         PDFPageCanvas pageCanvas = page.getCanvas();
 
         // The page graphics is located by default on top of existing page content.

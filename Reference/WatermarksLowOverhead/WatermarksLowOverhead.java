@@ -35,7 +35,7 @@ public class WatermarksLowOverhead {
     private static void DrawWatermarkUnderPageContent(PDFPageCanvas pageCanvas)
     {
         PDFBrush redBrush = new PDFBrush(new PDFRgbColor(192, 0, 0));
-        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 36);
+        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 36);
 
         PDFStringAppearanceOptions sao = new PDFStringAppearanceOptions();
         sao.setBrush(redBrush);
@@ -54,7 +54,7 @@ public class WatermarksLowOverhead {
     private static void DrawWatermarkOverPageContent(PDFPageCanvas pageCanvas)
     {
         PDFBrush redBrush = new PDFBrush(new PDFRgbColor(192, 0, 0));
-        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 32);
+        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 32);
 
         // Draw the watermark over page content.
         // Page content under the watermark will be masked.
@@ -87,7 +87,7 @@ public class WatermarksLowOverhead {
     private static void DrawWatermarkWithTransparency(PDFPageCanvas pageCanvas)
     {
         PDFBrush redBrush = new PDFBrush(new PDFRgbColor(192, 0, 0));
-        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 36);
+        PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 36);
 
         pageCanvas.saveGraphicsState();
 

@@ -15,7 +15,7 @@ import com.o2sol.pdf4java.graphics.formattedcontent.PDFFormattedTextBlock;
 public class TableOfContents {
     public static void main(String[] args) {
         try {
-            PDFStandardFont heading1Font = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 16);
+            PDFStandardFont heading1Font = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 16);
             PDFStandardFont heading2Font = new PDFStandardFont(heading1Font);
             heading2Font.setSize(14);
             PDFStandardFont heading3Font = new PDFStandardFont(heading1Font);

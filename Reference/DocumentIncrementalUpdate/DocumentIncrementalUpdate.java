@@ -35,7 +35,7 @@ public class DocumentIncrementalUpdate {
             df.setEnablePageGraphics(false);
             PDFFixedDocument document = new PDFFixedDocument("DocumentIncrementalUpdate.pdf", df);
 
-            PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 24);
+            PDFStandardFont helvetica = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 24);
             PDFBrush brush = new PDFBrush();
 
             // Add a new page with some content on it.

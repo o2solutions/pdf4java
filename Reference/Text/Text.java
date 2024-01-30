@@ -11,7 +11,7 @@ public class Text {
     public static void main(String[] args) {
         try {
             PDFFixedDocument document = new PDFFixedDocument();
-            PDFStandardFont helveticaBold = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 16);
+            PDFStandardFont helveticaBold = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 16);
 
             PDFPage page = document.addPage();
             DrawTextLines(page, helveticaBold);

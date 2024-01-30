@@ -18,7 +18,7 @@ public class OptionalContent {
             PDFFixedDocument document = new PDFFixedDocument();
             document.setOptionalContentProperties(new PDFOptionalContentProperties());
 
-            PDFStandardFont helveticaBold  = new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 18);
+            PDFStandardFont helveticaBold  = new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 18);
             PDFBrush blackBrush = new PDFBrush();
             PDFBrush greenBrush = new PDFBrush(PDFRgbColor.DARK_GREEN);
             PDFBrush yellowBrush = new PDFBrush(PDFRgbColor.YELLOW);

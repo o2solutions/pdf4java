@@ -733,7 +733,7 @@ public class Annotations {
         redactionAppearance.getCanvas().drawRectangle(new PDFBrush(PDFRgbColor.LIGHT_GREEN), 0, 0, w, h);
         PDFStringAppearanceOptions sao = new PDFStringAppearanceOptions();
         sao.setBrush(new PDFBrush(PDFRgbColor.DARK_RED));
-        sao.setFont(new PDFStandardFont(PDFStandardFontFace.HELVETICABOLD, 32));
+        sao.setFont(new PDFStandardFont(PDFStandardFontFace.HELVETICA_BOLD, 32));
         PDFStringLayoutOptions slo = new PDFStringLayoutOptions();
         slo.setWidth(w);
         slo.setHeight(h);
