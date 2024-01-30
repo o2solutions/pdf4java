@@ -298,7 +298,7 @@ public class Annotations {
         page.getCanvas().drawString("Line annotations", font, blackBrush, 50, 50);
 
         PDFLineEndStyle[] les = new PDFLineEndStyle[] {
-                PDFLineEndStyle.CIRCLE, PDFLineEndStyle.CLOSEDARROW, PDFLineEndStyle.NONE, PDFLineEndStyle.OPENARROW
+                PDFLineEndStyle.CIRCLE, PDFLineEndStyle.CLOSED_ARROW, PDFLineEndStyle.NONE, PDFLineEndStyle.OPEN_ARROW
         };
 
         for (int i = 0; i < les.length; i++)
@@ -309,7 +309,7 @@ public class Annotations {
             la.setContents("I am a line annotation with " + les[i].toString().substring(1) + " ending.");
             la.setStartPoint(50, 100 + 40 * i);
             la.setEndPoint(250, 100 + 40 * i);
-            la.setEndLineSymbol(les[i]);
+            la.setEndLineStyle(les[i]);
             page.getCanvas().drawString("Line end symbol: " + les[i].toString().substring(1), font, blackBrush, 270, 100 + 40 * i);
         }
     }
