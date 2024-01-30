@@ -130,7 +130,7 @@ public class PDFUA {
         PDFStringAppearanceOptions sao = new PDFStringAppearanceOptions();
         sao.setBrush(blackBrush);
         sao.setFont(textFont);
-        sao.getFont().setIsUnderline(true);
+        sao.getFont().setUnderline(true);
         PDFStringLayoutOptions slo = new PDFStringLayoutOptions();
         slo.setX(30);
         slo.setY(260);
@@ -144,7 +144,7 @@ public class PDFUA {
         seSection.appendChild(seSpecialParagraph);
 
         pageCanvas.beginStructureElement(seSpecialParagraph);
-        textFont.setIsUnderline(false);
+        textFont.setUnderline(false);
         textFont.setSize(18);
         pageCanvas.drawString("A special paragraph with custom structure element type.", textFont, blackBrush, 30, 350);
         pageCanvas.endStructureElement();
