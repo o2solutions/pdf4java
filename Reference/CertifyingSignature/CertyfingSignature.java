@@ -1,4 +1,3 @@
-import com.o2sol.pdf4java.Global;
 import com.o2sol.pdf4java.PDFFixedDocument;
 import com.o2sol.pdf4java.core.exceptions.PDFException;
 import com.o2sol.pdf4java.digitalsignatures.*;
