@@ -251,7 +251,7 @@ The main features of [**PDF4Java**](https://o2sol.com/pdf4java/overview.htm) lib
   - Add, edit and remove COS objects	
   - Supported COS objects: strings, numbers, names, booleans, nulls, arrays, dictionaries and streams	
 
-##### PDF RENDERING (included in PDF4Java+Render package) (this package is under development and it is not available yet)	 
+##### PDF RENDERING (included in PDF4Java+Render package)	 
  
   - Convert PDF pages to color, grayscale and black & white images
   - Convert PDF pages to RAW, PNG and TIFF (single and multi-page)
