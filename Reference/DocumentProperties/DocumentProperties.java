@@ -32,10 +32,10 @@ public class DocumentProperties {
             // Set the viewer preferences.
             PDFViewerPreferences viewerPreferences = new PDFViewerPreferences();
             viewerPreferences.setCenterWindow(true);
-            viewerPreferences.setIsDocumentTitleDisplayed(true);
-            viewerPreferences.setIsMenubarHidden(true);
-            viewerPreferences.setIsToolbarHidden(true);
-            viewerPreferences.setIsWindowUIHidden(true);
+            viewerPreferences.setDocumentTitleDisplayed(true);
+            viewerPreferences.setHiddenMenubar(true);
+            viewerPreferences.setHiddenToolbar(true);
+            viewerPreferences.setHiddenWindowUI(true);
             viewerPreferences.setPrintScaling(PDFPrintScaling.NONE);
             document.setViewerPreferences(viewerPreferences);
 

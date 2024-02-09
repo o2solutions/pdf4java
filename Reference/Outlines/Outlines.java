@@ -54,7 +54,7 @@ public class Outlines {
                 outline.setAction(gotoPage);
                 root.getItems().add(outline);
             }
-            root.setIsExpanded(true);
+            root.setExpanded(true);
 
             // Create an outline that will launch a link in the browser.
             PDFUriAction uriAction = new PDFUriAction();

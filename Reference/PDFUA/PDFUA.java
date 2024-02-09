@@ -40,7 +40,7 @@ public class PDFUA {
             document.setXmpMetadata(new PDFXmpMetadata());
 
             document.setViewerPreferences(new PDFViewerPreferences());
-            document.getViewerPreferences().setIsDocumentTitleDisplayed(true);
+            document.getViewerPreferences().setDocumentTitleDisplayed(true);
 
             document.setMarkInformation(new PDFMarkInformation());
             document.getMarkInformation().setIsTaggedPDF(true);
