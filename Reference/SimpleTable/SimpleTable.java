@@ -67,23 +67,23 @@ public class SimpleTable {
         PDFFlowTableColumn column = attendantsTable.getColumn(0);
         column.setVerticalAlign(PDFGraphicAlign.CENTER);
         column.setWidth(120);
-        column.setIsWidthRelativeToTable(false);
+        column.setWidthRelativeToTable(false);
         column = attendantsTable.getColumn(1);
         column.setVerticalAlign(PDFGraphicAlign.CENTER);
         column.setWidth(210);
-        column.setIsWidthRelativeToTable(false);
+        column.setWidthRelativeToTable(false);
         column = attendantsTable.getColumn(2);
         column.setVerticalAlign(PDFGraphicAlign.CENTER);
         column.setWidth(100);
-        column.setIsWidthRelativeToTable(false);
+        column.setWidthRelativeToTable(false);
         column = attendantsTable.getColumn(3);
         column.setVerticalAlign(PDFGraphicAlign.CENTER);
         column.setWidth(190);
-        column.setIsWidthRelativeToTable(false);
+        column.setWidthRelativeToTable(false);
         column = attendantsTable.getColumn(4);
         column.setVerticalAlign(PDFGraphicAlign.CENTER);
         column.setWidth(130);
-        column.setIsWidthRelativeToTable(false);
+        column.setWidthRelativeToTable(false);
 
         PDFFlowTableRow row = attendantsTable.getHeaderRows().addRowWithCells(new Object[] { "Name", "Email", "Phone", "Company", "Country" });
         for (int i = 0; i < row.getCells().size(); i++) {

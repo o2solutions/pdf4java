@@ -115,7 +115,7 @@ public class Invoice {
 
         PDFFlowTableContent invoiceInfoTable = new PDFFlowTableContent(2);
         invoiceInfoTable.getColumn(0).setWidth(120);
-        invoiceInfoTable.getColumn(0).setIsWidthRelativeToTable(false);
+        invoiceInfoTable.getColumn(0).setWidthRelativeToTable(false);
         ((PDFFlowTableStringCell)invoiceInfoTable.getDefaultCell()).setFont(contentFont);
         invoiceInfoTable.addRowWithCells(new Object[] {" ", " "});
         PDFFlowTableRow row = invoiceInfoTable.addRowWithCells(new Object[] {"Date", "15 March 2016"});
@@ -170,27 +170,27 @@ public class Invoice {
         PDFFlowTableColumn column = invoiceInfoTable.getColumn(0); 
         column.setVerticalAlign(PDFGraphicAlign.CENTER);
         column.setWidth(250);
-        column.setIsWidthRelativeToTable(false);
+        column.setWidthRelativeToTable(false);
         column = invoiceInfoTable.getColumn(1);
         column.setHorizontalAlign(PDFGraphicAlign.FAR);
         column.setVerticalAlign(PDFGraphicAlign.CENTER);
         column.setWidth(50);
-        column.setIsWidthRelativeToTable(false);
+        column.setWidthRelativeToTable(false);
         column = invoiceInfoTable.getColumn(2);
         column.setVerticalAlign(PDFGraphicAlign.CENTER);
         column.setHorizontalAlign(PDFGraphicAlign.FAR);
         column.setWidth(80);
-        column.setIsWidthRelativeToTable(false);
+        column.setWidthRelativeToTable(false);
         column = invoiceInfoTable.getColumn(3);
         column.setHorizontalAlign(PDFGraphicAlign.FAR);
         column.setVerticalAlign(PDFGraphicAlign.CENTER);
         column.setWidth(80);
-        column.setIsWidthRelativeToTable(false);
+        column.setWidthRelativeToTable(false);
         column = invoiceInfoTable.getColumn(4);
         column.setHorizontalAlign(PDFGraphicAlign.FAR);
         column.setVerticalAlign(PDFGraphicAlign.CENTER);
         column.setWidth(80);
-        column.setIsWidthRelativeToTable(false);
+        column.setWidthRelativeToTable(false);
         ((PDFFlowTableStringCell)invoiceInfoTable.getDefaultCell()).setFont(contentFont);
 
         PDFFlowTableRow row = invoiceInfoTable.addRowWithCells(new Object[] {"Description", "Qty", "Price", "Total", "VAT/Tax"});
