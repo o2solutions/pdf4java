@@ -17,7 +17,7 @@ public class FormFill {
 
             ((PDFListBoxField)form.getField("secondcar")).setSelectedIndex(1);
 
-            ((PDFCheckBoxField)form.getField("agree")).setIsChecked(true);
+            ((PDFCheckBoxField)form.getField("agree")).setChecked(true);
             form.flattenFields();
 
             document.save("FormFill.pdf");
