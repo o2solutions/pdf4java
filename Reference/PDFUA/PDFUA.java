@@ -43,7 +43,7 @@ public class PDFUA {
             document.getViewerPreferences().setDocumentTitleDisplayed(true);
 
             document.setMarkInformation(new PDFMarkInformation());
-            document.getMarkInformation().setIsTaggedPDF(true);
+            document.getMarkInformation().setTaggedPDF(true);
 
             document.setStructureTree(new PDFStructureTree());
 
