@@ -15,29 +15,35 @@ import com.o2sol.pdf4java.graphics.formattedcontent.PDFFormattedTextBlock;
 public class FormattedContent {
     public static void main(String[] args) {
         try {
-            String pdf4netText = "PDF4NET";
-            String paragraph1Block2Text = " library is a .NET/Xamarin library for cross-platform PDF development. Code written for ";
+            String pdf4netText = "PDF4Java";
+            String paragraph1Block2Text = " library is a Java library for cross-platform PDF development. Code written for ";
             String paragraph1Block4Text = " can be compiled on all supported platforms without changes. The library features a " +
                     "wide range of capabilities, for both beginers and advanced PDF developers.";
             String paragraph2Block1Text = "The development style is based on fixed document model, where each page is created as needed " +
                     "and content is placed at fixed position using a grid based layout.\r\n" +
                     "This gives you access to all PDF features, whether you want to create a simple file " +
                     "or you want to create a transparency knockout group at COS level, and lets you build more complex models on top of the library.";
-            String paragraph3Block2Text = " has been developed entirely in C# and it is 100% managed code.";
+            String paragraph3Block2Text = " has been developed entirely in Java.";
             String paragraph4Block1Text = "With ";
             String paragraph4Block3Text = " you can port your PDF application logic to other platforms with zero effort which means faster time to market.";
             String paragraph5Block1Text = "Simple licensing per developer with royalty free distribution helps you keep your costs under control.";
-            String paragraph6Block1Text = "SUPPORTED PLATFORMS";
-            String paragraph7Block1Text = "NET 2.0 to .NET 4.5";
-            String paragraph8Block1Text = "Windows Forms";
-            String paragraph9Block1Text = "ASP.NET Webforms and MVC";
-            String paragraph10Block1Text = "Console applications";
-            String paragraph11Block1Text = "Windows services";
-            String paragraph12Block1Text = "Mono";
-            String paragraph13Block1Text = "WPF 4.0 & 4.5";
-            String paragraph15Block1Text = "UWP";
-            String paragraph17Block1Text = "Xamarin.iOS";
-            String paragraph18Block1Text = "Xamarin.Android";
+            String paragraph6Block1Text = "Main Features:";
+            String paragraph7Block1Text = "Create PDF files with support for grid/flow layout";
+            String paragraph8Block1Text = "Digitally sign PDF files with CMS/PAdES signatures and LTV support";
+            String paragraph9Block1Text = "Native support for 1D and 2D barcodes";
+            String paragraph10Block1Text = "Create, fill and flatten PDF e-forms";
+            String paragraph11Block1Text = "Merge, append, mix and split PDF documents";
+            String paragraph12Block1Text = "Page content transformation";
+            String paragraph13Block1Text = "Translate, rotate and scale multiple pages to a single page";
+            String paragraph15Block1Text = "Stamp existing PDF documents";
+            String paragraph17Block1Text = "Change security settings, encrypt and decrypt PDF documents";
+            String paragraph18Block1Text = "Redact text and images on PDF pages";
+            String paragraph19Block1Text = "Extract images, text and vector graphics from PDF";
+            String paragraph20Block1Text = "Create PDF/A-1, PDF/A-2, PDF/A-3 files";
+            String paragraph21Block1Text = "Create accesible PDF files with PDF/UA support";
+            String paragraph22Block1Text = "Convert PDF pages and documents to color/gray/b&w images";
+            String paragraph23Block1Text = "Easy to learn and use";
+            String paragraph24Block1Text = "Supports Java 8 and higher";
 
             PDFStandardFont textFont = new PDFStandardFont(PDFStandardFontFace.HELVETICA, 10);
             PDFFormattedTextBlock pdf4netLinkBlock = new PDFFormattedTextBlock(pdf4netText);
@@ -155,6 +161,42 @@ public class FormattedContent {
             paragraph18.setLeftIndentation(10);
             paragraph18.addBlock(new PDFFormattedTextBlock(paragraph18Block1Text, textFont));
 
+            PDFFormattedParagraph paragraph19 = new PDFFormattedParagraph();
+            paragraph19.setSpacingBefore(3);
+            paragraph19.setBullet(bulletBlock);
+            paragraph19.setLeftIndentation(10);
+            paragraph19.addBlock(new PDFFormattedTextBlock(paragraph19Block1Text, textFont));
+
+            PDFFormattedParagraph paragraph20 = new PDFFormattedParagraph();
+            paragraph20.setSpacingBefore(3);
+            paragraph20.setBullet(bulletBlock);
+            paragraph20.setLeftIndentation(10);
+            paragraph20.addBlock(new PDFFormattedTextBlock(paragraph20Block1Text, textFont));
+
+            PDFFormattedParagraph paragraph21 = new PDFFormattedParagraph();
+            paragraph21.setSpacingBefore(3);
+            paragraph21.setBullet(bulletBlock);
+            paragraph21.setLeftIndentation(10);
+            paragraph21.addBlock(new PDFFormattedTextBlock(paragraph21Block1Text, textFont));
+
+            PDFFormattedParagraph paragraph22 = new PDFFormattedParagraph();
+            paragraph22.setSpacingBefore(3);
+            paragraph22.setBullet(bulletBlock);
+            paragraph22.setLeftIndentation(10);
+            paragraph22.addBlock(new PDFFormattedTextBlock(paragraph22Block1Text, textFont));
+
+            PDFFormattedParagraph paragraph23 = new PDFFormattedParagraph();
+            paragraph23.setSpacingBefore(3);
+            paragraph23.setBullet(bulletBlock);
+            paragraph23.setLeftIndentation(10);
+            paragraph23.addBlock(new PDFFormattedTextBlock(paragraph23Block1Text, textFont));
+
+            PDFFormattedParagraph paragraph24 = new PDFFormattedParagraph();
+            paragraph24.setSpacingBefore(3);
+            paragraph24.setBullet(bulletBlock);
+            paragraph24.setLeftIndentation(10);
+            paragraph24.addBlock(new PDFFormattedTextBlock(paragraph24Block1Text, textFont));
+
             PDFFormattedContent formattedContent = new PDFFormattedContent();
             formattedContent.addParagraph(paragraph1);
             formattedContent.addParagraph(paragraph2);
@@ -172,6 +214,12 @@ public class FormattedContent {
             formattedContent.addParagraph(paragraph15);
             formattedContent.addParagraph(paragraph17);
             formattedContent.addParagraph(paragraph18);
+            formattedContent.addParagraph(paragraph19);
+            formattedContent.addParagraph(paragraph20);
+            formattedContent.addParagraph(paragraph21);
+            formattedContent.addParagraph(paragraph22);
+            formattedContent.addParagraph(paragraph23);
+            formattedContent.addParagraph(paragraph24);
 
             PDFFixedDocument document = new PDFFixedDocument();
             PDFPage page = document.getPages().add();
