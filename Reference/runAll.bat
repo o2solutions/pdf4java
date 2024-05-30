@@ -71,11 +71,7 @@ CD ..
 CD FileAttachments
 CALL run.bat
 CD ..
-
-CD FlowDocumentWithExternalPages
-CALL run.bat
-CD ..
-
+           
 CD Fonts
 CALL run.bat
 CD ..
