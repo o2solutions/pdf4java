@@ -140,6 +140,10 @@ CD PAdESSignature
 CALL run.bat
 CD ..
 
+CD PageAnalyzer
+CALL run.bat
+CD ..
+
 CD PageImposition
 CALL run.bat
 CD ..
