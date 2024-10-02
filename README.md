@@ -232,7 +232,9 @@ The main features of [**PDF4Java**](https://o2sol.com/pdf4java/overview.htm) lib
   - Convert images to Grayscale	
   - Replace page images	
   - Remove page images	
- 
+  - Enhanced contextual information for path, text and image operators
+  - High performance read-only page content analysis
+
 ##### CONTENT REDACTION	 
  
   - Text redaction	
