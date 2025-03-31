@@ -24,6 +24,22 @@ CD CertifyingSignature
 CALL run.bat
 CD ..
               
+CD ComplexScriptsFlowContent
+CALL run.bat
+CD ..
+              
+CD ComplexScriptsFormFill
+CALL run.bat
+CD ..
+              
+CD ComplexScriptsTables
+CALL run.bat
+CD ..
+              
+CD ComplexScriptsText
+CALL run.bat
+CD ..
+              
 CD ContentExtraction
 CALL run.bat
 CD ..
