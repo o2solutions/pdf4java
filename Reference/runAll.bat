@@ -204,6 +204,10 @@ CD Render\PDF2ColorImage
 CALL run.bat
 CD ..\..
                  
+CD Render\PDF2FixedImageSize
+CALL run.bat
+CD ..\..
+                 
 CD Render\PDF2GrayImage
 CALL run.bat
 CD ..\..
