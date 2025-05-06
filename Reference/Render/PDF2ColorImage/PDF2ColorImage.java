@@ -2,14 +2,9 @@ import com.o2sol.pdf4java.PDFFixedDocument;
 import com.o2sol.pdf4java.core.exceptions.PDFException;
 import com.o2sol.pdf4java.core.io.FileMode;
 import com.o2sol.pdf4java.core.io.FileStream;
-import com.o2sol.pdf4java.render.PDFLayerRenderTarget;
 import com.o2sol.pdf4java.render.PDFPageImageFormat;
 import com.o2sol.pdf4java.render.PDFPageRenderer;
 import com.o2sol.pdf4java.render.PDFRendererSettings;
-import com.o2sol.pdf4java.render.imaging.PDFFloydSteinbergDitheringFilter;
-import com.o2sol.pdf4java.render.imaging.PDFThresholdFilter;
-import com.o2sol.pdf4java.render.renderingsurfaces.PDFBlackWhiteBlockRenderingSurface;
-import com.o2sol.pdf4java.render.renderingsurfaces.PDFRenderingSurface;
 import com.o2sol.pdf4java.render.renderingsurfaces.PDFRenderingSurfaceType;
 
 import java.util.Random;
