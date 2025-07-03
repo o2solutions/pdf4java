@@ -489,9 +489,9 @@ public class Annotations {
             PDFRubberStampAnnotation rsa = new PDFRubberStampAnnotation();
             rsa.setAuthor("com.o2sol.pdf4java");
             rsa.setContents("I am a " + rubberStampAnnotationNames[i] + " rubber stamp annotation.");
+            rsa.setDisplayRectangle(50, 70 + 50 * i, 200, 40);
             rsa.setStampType(rubberStampAnnotationNames[i]);
             page.addAnnotation(rsa);
-            rsa.setDisplayRectangle(50, 70 + 50 * i, 200, 40);
             page.getCanvas().drawString(rubberStampAnnotationNames[i], font, blackBrush, 270, 85 + 50 * i);
         }
 
